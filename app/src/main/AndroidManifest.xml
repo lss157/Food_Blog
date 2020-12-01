@@ -11,7 +11,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ShowContextActivity"></activity>
+        <provider
+            android:name=".FoodContentProvider"
+            android:authorities="cn.edu.food_blog.provider"
+            android:enabled="true"
+            android:exported="true"></provider>
+
+        <activity android:name=".ShowContextActivity" />
         <activity android:name=".UpdateActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
