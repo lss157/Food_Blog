@@ -49,13 +49,20 @@ class FoodContentProvider : ContentProvider() {
         uri: Uri, projection: Array<String>?, selection: String?,
         selectionArgs: Array<String>?, sortOrder: String?
     ): Cursor? {
-        TODO("Implement this to handle query requests from clients.")
+        return when(uriMatcher.match(uri)){
+            foodTable -> db.query(TABLE_NAME,null,null,null,null,null,null)
+            foodItem -> {
+                val title = uri.pathSegments[1]
+                db.query(TABLE_NAME,null,"title = ?", arrayOf(title),null,null,null)
+            }
+            else -> null
+        }
     }
 
     override fun update(
         uri: Uri, values: ContentValues?, selection: String?,
         selectionArgs: Array<String>?
     ): Int {
-        TODO("Implement this to handle requests to update one or more rows.")
+        return 0
     }
 }

@@ -16,6 +16,14 @@ class MainActivity : AppCompatActivity() {
                     val intent = Intent(this, UpdateActivity::class.java)
                     startActivity(intent)
                 }
+                R.id.list ->{
+                    val intent = Intent(this,MainActivity::class.java)
+                    startActivity(intent)
+                }
+                R.id.showText ->{
+                    val intent = Intent(this,ShowContextActivity::class.java)
+                    startActivity(intent)
+                }
             }
             true
         }
