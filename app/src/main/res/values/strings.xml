@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Food_Blog</string>
+    <string name="takephotobtn">TAKE PHOTO</string>
+    <string name="fromalbumbtn">FROM ALBUM</string>
+    <string name="add_your_description">Add your description</string>
+    <string name="upload">UPLOAD</string>
+    <string name="add_your_title">Add your title</string>
+    <string name="list">List</string>
+    <string name="showtext">Text</string>
+    <string name="update">Update</string>
+</resources>
