@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Food_Blog</string>
+    <string name="app_name">食记</string>
     <string name="takephotobtn">TAKE PHOTO</string>
     <string name="fromalbumbtn">FROM ALBUM</string>
     <string name="add_your_description">Add your description</string>
@@ -10,4 +10,6 @@
     <string name="update">Update</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home">我的</string>
+    <string name="look">发现</string>
 </resources>
