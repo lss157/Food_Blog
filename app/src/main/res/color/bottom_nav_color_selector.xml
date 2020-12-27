@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--底下导航栏被选中是黄色，未被选中是灰色-->
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:state_checked="true" android:color="#FFC107"  />
+    <item android:color="#888888"  />
+</selector>

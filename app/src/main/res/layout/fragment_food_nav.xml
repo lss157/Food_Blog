@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:id="@+id/leftBar"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#EFEFEF">
+
+            <TextView
+                android:id="@+id/btnCaixi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="菜系"
+                android:textSize="20dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:gravity="center"
+                android:padding="15dp"
+                android:layout_marginBottom="10dp"
+                />
+
+            <TextView
+                android:id="@+id/btnCaipin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="菜品"
+                android:textSize="20dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:gravity="center"
+                android:padding="15dp"
+                android:layout_marginBottom="10dp"
+                />
+
+            <TextView
+                android:id="@+id/btnKouwei"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="口味"
+                android:textSize="20dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:gravity="center"
+                android:padding="15dp"
+                android:layout_marginBottom="10dp"
+                />
+
+            <TextView
+                android:id="@+id/btnGongyi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="加工工艺"
+                android:textSize="20dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:gravity="center"
+                android:padding="15dp"
+                android:layout_marginBottom="10dp"
+                />
+
+            <TextView
+                android:id="@+id/btnXiaochi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="小吃"
+                android:textSize="20dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:gravity="center"
+                android:padding="15dp"
+                android:layout_marginBottom="10dp"
+                />
+
+            <TextView
+                android:id="@+id/btnChangjing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="场景"
+                android:textSize="20dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:gravity="center"
+                android:padding="15dp"
+                />
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/rightBar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto">-->
+
+<!--    <com.google.android.material.appbar.AppBarLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:fitsSystemWindows="true">-->
+
+<!--        <androidx.appcompat.widget.Toolbar-->
+<!--            android:id="@+id/toolBarMain"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@color/main"-->
+<!--            android:fitsSystemWindows="true">-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="美食"-->
+<!--                android:textColor="@color/colorPrimaryDark"-->
+<!--                android:textSize="25dp"-->
+<!--                android:layout_gravity="center"-->
+<!--                />-->
+
+<!--        </androidx.appcompat.widget.Toolbar>-->
+
+<!--    </com.google.android.material.appbar.AppBarLayout>-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:orientation="vertical"-->
+<!--        app:layout_behavior="@string/appbar_scrolling_view_behavior">-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="vertical"-->
+<!--            app:layout_behavior="@string/appbar_scrolling_view_behavior">-->
+
+<!--            <androidx.recyclerview.widget.RecyclerView-->
+<!--                android:id="@+id/caixiRecView"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                />-->
+
+<!--            <androidx.recyclerview.widget.RecyclerView-->
+<!--                android:id="@+id/caipinRecView"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                />-->
+
+<!--            <androidx.recyclerview.widget.RecyclerView-->
+<!--                android:id="@+id/xiaochiRecView"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                />-->
+
+<!--            <androidx.recyclerview.widget.RecyclerView-->
+<!--                android:id="@+id/gongyiRecView"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                />-->
+
+<!--            <androidx.recyclerview.widget.RecyclerView-->
+<!--                android:id="@+id/kouweiRecView"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                />-->
+
+<!--            <androidx.recyclerview.widget.RecyclerView-->
+<!--                android:id="@+id/changjingRecView"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                />-->
+
+<!--        </LinearLayout>-->
+
+<!--        <androidx.recyclerview.widget.RecyclerView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight="1"-->
+<!--            />-->
+
+<!--    </LinearLayout>-->
+
+<!--</androidx.coordinatorlayout.widget.CoordinatorLayout>-->
